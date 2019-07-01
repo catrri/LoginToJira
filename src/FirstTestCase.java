@@ -7,7 +7,7 @@ public class FirstTestCase {
   public static void main(String[] args) {
 
     // Fix for - The path to the driver executable must be set by the webdriver.chrome.driver system property
-    System.setProperty("webdriver.chrome.driver", "/Users/apiliuk/Downloads/polymorphismSample/geckodriver");
+    System.setProperty("webdriver.chrome.driver", "/Users/apiliuk/Downloads/polymorphismSample/chromedriver");
     // Create a new instance of the Firefox driver
     WebDriver driver = new ChromeDriver();
 
