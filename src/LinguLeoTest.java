@@ -11,25 +11,11 @@ public class LinguLeoTest {
     // Create a new instance of the Firefox driver
     WebDriver driver = new ChromeDriver();
 
-
-
     driver.get("https://lingualeo.com/ru");
-    driver.findElement(By.xpath("//input[@type='email']")).sendKeys("Artur");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    driver.findElement(By.xpath("//div[contains(text(), 'У МЕНЯ УЖЕ ЕСТЬ АККАУНТ')]")).click();
+    driver.findElement(By.xpath("//input[@name='email']")).sendKeys("a.a.piluck@gmail.com");
+    driver.findElement(By.xpath("//input[@name='password']")).sendKeys("a.a.piluck@gmail.com");
+    driver.findElement(By.xpath("//span[contains(text(), 'ВОЙТИ')]")).click();
 
     //Wait for 5 Sec
     try {
